@@ -23,3 +23,13 @@ print(vehicle_data.head(2))
 # check null values
 print(vehicle_data.isnull())
 
+# print the summation of null values
+print(vehicle_data.isnull().sum())
+
+# remove the unrelated columns from the data set
+vehicle_data = vehicle_data.drop(
+    columns=['Title', 'Sub_title', 'Seller_type', 'published_date', 'Seller_name', 'Post_URL', 'Description',
+             'Location', 'Edition'])
+
+# check the removed columns
+print(vehicle_data.head())
