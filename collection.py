@@ -11,3 +11,8 @@ vehicle_data = pd.read_csv('vehicle_data.csv')
 # print the vehicle data sets
 print(vehicle_data.tail())
 
+# print the vehicle data Shape
+print(vehicle_data.shape)
+
+# print the non null and dtype
+print(vehicle_data.info())
