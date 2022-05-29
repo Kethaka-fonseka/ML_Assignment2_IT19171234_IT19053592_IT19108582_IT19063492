@@ -20,3 +20,11 @@ print(vehicle_data.head(10))
 # print data shape
 print(vehicle_data.shape)
 
+# drop the price data from the x axis
+x= vehicle_data.drop('Price', axis=1)
+
+# add the price to the y axis
+y= vehicle_data['Price']
+
+# define train and test and test data size
+x_train_axis, X_test_axis, y_train_axis, y_test_axis = train_test_split(x, y, test_size=0.25)
