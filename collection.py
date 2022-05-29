@@ -20,3 +20,6 @@ print(vehicle_data.info())
 # print 2 datas
 print(vehicle_data.head(2))
 
+# check null values
+print(vehicle_data.isnull())
+
