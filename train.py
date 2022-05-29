@@ -7,3 +7,9 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import GridSearchCV
 
+
+# get data from the process file
+vehicle_data = prc.vehicle_data
+
+# convert to the data to the binary format
+vehicle_data=pd.get_dummies(vehicle_data)
