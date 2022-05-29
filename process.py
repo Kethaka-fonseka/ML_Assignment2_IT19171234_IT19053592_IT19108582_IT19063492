@@ -32,3 +32,7 @@ def set_Body(name):
         return name
     else:
         return 'Other'
+
+
+# assign the values to the set_Body method
+vehicle_data['Body'] = vehicle_data['Body'].apply(set_Body)
