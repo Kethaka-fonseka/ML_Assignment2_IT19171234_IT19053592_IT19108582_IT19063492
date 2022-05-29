@@ -13,3 +13,10 @@ vehicle_data = prc.vehicle_data
 
 # convert to the data to the binary format
 vehicle_data=pd.get_dummies(vehicle_data)
+
+# print the vehicle dat
+print(vehicle_data.head(10))
+
+# print data shape
+print(vehicle_data.shape)
+
