@@ -36,3 +36,11 @@ def set_Body(name):
 
 # assign the values to the set_Body method
 vehicle_data['Body'] = vehicle_data['Body'].apply(set_Body)
+
+
+
+# print the data set to check tha values
+print(vehicle_data.head())
+
+# remove the all null values from the data set
+vehicle_data = vehicle_data.dropna()
