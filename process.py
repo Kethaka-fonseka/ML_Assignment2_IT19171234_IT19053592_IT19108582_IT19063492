@@ -10,3 +10,9 @@ def set_brand(name):
     else:
         return 'Other'
 
+
+# assign the values to the set_brand method
+vehicle_data['Brand'] = vehicle_data['Brand'].apply(set_brand)
+
+
+
