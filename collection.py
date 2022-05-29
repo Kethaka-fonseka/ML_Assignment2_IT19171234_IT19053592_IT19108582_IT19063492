@@ -16,3 +16,7 @@ print(vehicle_data.shape)
 
 # print the non null and dtype
 print(vehicle_data.info())
+
+# print 2 datas
+print(vehicle_data.head(2))
+
