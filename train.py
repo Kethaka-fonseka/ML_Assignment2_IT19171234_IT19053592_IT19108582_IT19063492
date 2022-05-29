@@ -65,3 +65,10 @@ grid_fit=grid_obj.fit(x_train_axis, y_train_axis)
 best_model = grid_fit.best_estimator_
 print(best_model)
 
+# get the score value
+score_value=best_model.score(X_test_axis,y_test_axis)
+print(score_value)
+
+# create pickle file for trained model
+with open('VehiclePricePredictionModel.pickle', 'wb') as file:
+    pickle.dump(best_model, file)
