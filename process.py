@@ -21,3 +21,6 @@ def set_model(name):
         return name
     else:
         return 'Other'
+
+# assign the values to the set_model method
+vehicle_data['Model'] = vehicle_data['Model'].apply(set_model)
