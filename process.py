@@ -39,7 +39,7 @@ vehicle_data['Body'] = vehicle_data['Body'].apply(set_Body)
 
 
 
-# print the data set to check tha values
+# print the data set to check the values
 print(vehicle_data.head())
 
 # remove the all null values from the data set
