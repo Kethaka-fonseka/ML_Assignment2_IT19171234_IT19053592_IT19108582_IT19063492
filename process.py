@@ -15,4 +15,9 @@ def set_brand(name):
 vehicle_data['Brand'] = vehicle_data['Brand'].apply(set_brand)
 
 
-
+# define the set_model method to rename the models in the data set
+def set_model(name):
+    if name == 'Vezel' or name == 'CHR' or name == 'Land Cruiser Prado' or name == 'CRV' or name == 'Vitz' or name == 'Alto' or name == 'Montero' or name == 'Allion':
+        return name
+    else:
+        return 'Other'
