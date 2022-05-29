@@ -24,3 +24,11 @@ def set_model(name):
 
 # assign the values to the set_model method
 vehicle_data['Model'] = vehicle_data['Model'].apply(set_model)
+
+
+# define the set_Body method to rename the Body in the data set
+def set_Body(name):
+    if name == 'Saloon' or name == 'Hatchback':
+        return name
+    else:
+        return 'Other'
