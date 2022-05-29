@@ -54,3 +54,14 @@ model_accuracy(DecisionTree)
 # check random forest accuracy
 RandomForest=RandomForestRegressor()
 model_accuracy(RandomForest)
+
+# Use the random forest algorithm to train the model
+Parameters = {'n_estimators':[10, 50, 100],
+                 'criterion':['squared_error','absolute_error','poisson']}
+grid_obj = GridSearchCV(estimator=RandomForest, param_grid=Parameters)
+grid_fit=grid_obj.fit(x_train_axis, y_train_axis)
+
+# get best model
+best_model = grid_fit.best_estimator_
+print(best_model)
+
